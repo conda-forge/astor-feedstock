@@ -15,12 +15,15 @@ astor is designed to allow easy manipulation of Python source via the AST.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/astor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/astor-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/astor-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/astor-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/astor/badges/version.svg)](https://anaconda.org/conda-forge/astor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/astor/badges/downloads.svg)](https://anaconda.org/conda-forge/astor)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-astor-green.svg)](https://anaconda.org/conda-forge/astor) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/astor.svg)](https://anaconda.org/conda-forge/astor) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/astor.svg)](https://anaconda.org/conda-forge/astor) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/astor.svg)](https://anaconda.org/conda-forge/astor) |
 
 Installing astor
 ================
