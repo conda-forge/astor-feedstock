@@ -118,4 +118,5 @@ Feedstock Maintainers
 =====================
 
 * [@drewokane](https://github.com/drewokane/)
+* [@xhochy](https://github.com/xhochy/)
 
