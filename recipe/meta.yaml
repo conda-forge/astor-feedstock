@@ -1,32 +1,33 @@
 {% set name = "astor" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "6a6effda93f4e1ce9f618779b2dd1d9d84f1e32812c23a29b3fff6fd7f63fa5e" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/astor-{{ version }}.tar.gz
+  sha256: 37a6eed8b371f1228db08234ed7f6cfdc7817a3ed3824797e20cbb11dc2a7862
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
-  build:
-    - python
+  host:
+    - python =2.7|>=3.4
     - pip
-
   run:
-    - python
+    - python =2.7|>=3.4
 
 test:
   imports:
     - astor
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/berkerpeksag/astor
